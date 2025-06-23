@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: white;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        .label-cell {
+            width: 30%;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"], input[type="password"], input[type="number"], 
+        input[type="date"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 80px;
+            resize: vertical;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 8px;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .button-cell {
+            text-align: center;
+            padding-top: 20px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+            width: auto;
+        }
+        input[type="reset"] {
+            background-color: #6c757d;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        input[type="reset"]:hover {
+            background-color: #5a6268;
+        }
+        .required {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>User Registration Form</h1>
+        
+        <form action="#" method="post">
+            <table>
+                <!-- Text Field -->
+                <tr>
+                    <td class="label-cell">Full Name <span class="required">*</span>:</td>
+                    <td>
+                        <input type="text" name="fullname" id="fullname" placeholder="Enter your full name" required>
+                    </td>
+                </tr>
+                
+                <!-- Email Text Field -->
+                <tr>
+                    <td class="label-cell">Email Address <span class="required">*</span>:</td>
+                    <td>
+                        <input type="text" name="email" id="email" placeholder="Enter your email" required>
+                    </td>
+                </tr>
+                
+                <!-- Password Field -->
+                <tr>
+                    <td class="label-cell">Password <span class="required">*</span>:</td>
+                    <td>
+                        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                    </td>
+                </tr>
+                
+                <!-- Confirm Password Field -->
+                <tr>
+                    <td class="label-cell">Confirm Password <span class="required">*</span>:</td>
+                    <td>
+                        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm your password" required>
+                    </td>
+                </tr>
+                
+                <!-- Number Field -->
+                <tr>
+                    <td class="label-cell">Age:</td>
+                    <td>
+                        <input type="number" name="age" id="age" min="18" max="100" placeholder="Enter your age">
+                    </td>
+                </tr>
+                
+                <!-- Date of Birth Field -->
+                <tr>
+                    <td class="label-cell">Date of Birth <span class="required">*</span>:</td>
+                    <td>
+                        <input type="date" name="dob" id="dob" required>
+                    </td>
+                </tr>
+                
+                <!-- Radio Buttons -->
+                <tr>
+                    <td class="label-cell">Gender <span class="required">*</span>:</td>
+                    <td>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="male" required> Male</label>
+                            <label><input type="radio" name="gender" value="female" required> Female</label>
+                            <label><input type="radio" name="gender" value="other" required> Other</label>
+                        </div>
+                    </td>
+                </tr>
+                
+                <!-- Select List Box -->
+                <tr>
+                    <td class="label-cell">Country <span class="required">*</span>:</td>
+                    <td>
+                        <select name="country" id="country" required>
+                            <option value="">Select your country</option>
+                            <option value="usa">United States</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="australia">Australia</option>
+                            <option value="india">India</option>
+                            <option value="germany">Germany</option>
+                            <option value="france">France</option>
+                            <option value="japan">Japan</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <!-- Multiple Select List Box -->
+                <tr>
+                    <td class="label-cell">Programming Languages:</td>
+                    <td>
+                        <select name="languages" id="languages" multiple size="4">
+                            <option value="javascript">JavaScript</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="csharp">C#</option>
+                            <option value="php">PHP</option>
+                            <option value="ruby">Ruby</option>
+                            <option value="go">Go</option>
+                            <option value="swift">Swift</option>
+                        </select>
+                        <small>Hold Ctrl (Cmd on Mac) to select multiple options</small>
+                    </td>
+                </tr>
+                
+                <!-- Checkboxes -->
+                <tr>
+                    <td class="label-cell">Interests:</td>
+                    <td>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+                            <label><input type="checkbox" name="interests" value="music"> Music</label>
+                            <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+                            <label><input type="checkbox" name="interests" value="travel"> Travel</label>
+                            <label><input type="checkbox" name="interests" value="technology"> Technology</label>
+                            <label><input type="checkbox" name="interests" value="cooking"> Cooking</label>
+                        </div>
+                    </td>
+                </tr>
+                
+                <!-- Text Area -->
+                <tr>
+                    <td class="label-cell">About Yourself:</td>
+                    <td>
+                        <textarea name="about" id="about" placeholder="Tell us about yourself..."></textarea>
+                    </td>
+                </tr>
+                
+                <!-- Terms and Conditions Checkbox -->
+                <tr>
+                    <td class="label-cell">Agreement <span class="required">*</span>:</td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="terms" id="terms" required>
+                            I agree to the Terms and Conditions
+                        </label>
+                    </td>
+                </tr>
+                
+                <!-- Newsletter Subscription -->
+                <tr>
+                    <td class="label-cell">Newsletter:</td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="newsletter" id="newsletter">
+                            Subscribe to our newsletter
+                        </label>
+                    </td>
+                </tr>
+                
+                <!-- Buttons -->
+                <tr>
+                    <td colspan="2" class="button-cell">
+                        <input type="submit" value="Register">
+                        <input type="reset" value="Clear Form">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
