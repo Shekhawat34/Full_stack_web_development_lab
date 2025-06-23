@@ -1,0 +1,45 @@
+<!--HTML program, in such a way that, rather than placing large images on a page,the preferred technique is to use thumbnails by setting the height and width parameters to something like to 100*100 pixels. Each thumbnail image is also a link to a full sized
+version of the image. Create an image gallery using this technique-->
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        img {
+            width: 100px; /* Thumbnail width */
+            height: 100px; /* Thumbnail height */
+            border-radius: 10px; /* Optional styling */
+        }
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <p>Click on the thumbnails below to view the full-sized images.</p>
+
+    <div>
+        <a href="your-image.jpg" target="_blank">
+            <img src="your-image-thumbnail.jpg" alt="Your Profile Image">
+        </a>
+        <p>Lokender</p>
+    </div>
+
+    <div>
+        <a href="friend-image.jpg" target="_blank">
+            <img src="friend-image-thumbnail.jpg" alt="Friend's Profile Image">
+        </a>
+        <p>Pranav</p>
+    </div>
+</body>
