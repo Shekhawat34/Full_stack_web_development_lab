@@ -1,0 +1,72 @@
+<!-- explain the working of hyperlinks using <a> tag and href, target Attributes. -->
+<!DOCTYPE html>
+<html lang ="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Hyperlinks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .example {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .example p {
+            color: #666;
+        }
+        .example code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Understanding HTML Hyperlinks</h1>
+    <p>Hyperlinks are essential for navigating the web. They allow users to click and jump to different pages or sections of a page.</p>
+
+    <h2>The `<a>` Tag</h2>
+    <p>The `<a>` tag is used to create hyperlinks. The most important attribute of this tag is `href`, which specifies the URL of the page the link goes to.</p>
+
+    <div class="example">
+        <h2>Example of a Hyperlink</h2>
+        <p>Here is an example of a hyperlink:</p>
+        <code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code>
+        <p>This will create a link that says "Visit Example".</p>
+        <a href="https://www.example.com">Visit Example</a>
+    </div>
+
+    <h2>Target Attribute</h2>
+    <p>The `target` attribute specifies where to open the linked document. The most common values are:</p>
+    <ul>
+        <li><code>_blank</code>: Opens the link in a new tab or window.</li>
+        <li><code>_self</code>: Opens the link in the same frame (default behavior).</li>
+        <li><code>_parent</code>: Opens the link in the parent frame.</li>
+        <li><code>_top</code>: Opens the link in the full body of the window.</li>
+    </ul>
+
+    <div class="example">
+        <h2>Example with Target Attribute</h2>
+        <p>Here is an example of a hyperlink that opens in a new tab:</p>
+        <code>&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example in New Tab&lt;/a&gt;</code>
+        <p>This will create a link that opens "Visit Example" in a new tab when clicked.</p>
+        <a href="https://www.example.com" target="_blank">Visit Example in New Tab</a>
+    </div>
+    <h2>Summary</h2>
+    <p>Hyperlinks are created using the `<a>` tag with the `href` attribute to specify the link's destination. The `target` attribute can be used to control how the link opens, enhancing user navigation.</p>
+</body>
