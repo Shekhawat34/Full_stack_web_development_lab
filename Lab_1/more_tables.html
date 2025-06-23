@@ -1,0 +1,84 @@
+<!--explain the working of tables by preparing a timetable. (Note: Use <caption> tag to set the caption to the table & also use cell spacing, cell padding, border, rowspan, colspan etc.).-->\
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weekly Timetable</h1>
+    <table cellspacing="0" cellpadding="10" border="1">
+        <caption>Class Schedule</caption>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td rowspan="2">9:00 - 10:30 AM</td>
+            <td>Maths</td>
+            <td rowspan="2">Science</td>
+            <td rowspan="2">English</td>
+            <td rowspan="2">History</td>
+            <td rowspan="2">Geography</td>
+        </tr>
+        <tr>
+            <td>Physics</td>
+        </tr>
+        <tr>
+            <td>10:30 - 12:00 PM</td>
+            <td>Biology</td>
+            <td>Computer Science</td>
+            <td>Physical Education</td>
+            <td rowspan="2">Art</td>
+        </tr>
+        <tr>
+            <td>12:00 - 1:30 PM</td>
+            <td colspan="4">Lunch Break</td>
+        </tr>
+    </table>
+
+    <!-- Additional table for another week -->
+    <table cellspacing="0" cellpadding="10" border="1">
+        <caption>Next Week's Schedule</caption>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <!-- Add rows as needed -->
+    </table>
+
+    <!-- Add more tables as needed -->
+</body>
+
