@@ -1,0 +1,63 @@
+<!--explain the working of tables. (use tags: <table>, <tr>, <th>,<td> and attributes: border, rowspan, colspan)-->
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Example</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables Example</h1>
+    <p>This is an example of a table using HTML tags and attributes.</p>
+
+    <table border="1">
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Scores</th>
+        </tr>
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+        </tr>
+
+        <tr>
+            <td>Lokender</td>
+            <td>85</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Pranav</td>
+            <td>88</td>
+            <td>92</td>
+        </tr>
+    </table>
+
+    <p>The table above demonstrates the use of the following tags:</p>
+    <ul>
+        <li><code>&lt;table&gt;</code>: Defines the table.</li>
+        <li><code>&lt;tr&gt;</code>: Defines a table row.</li>
+        <li><code>&lt;th&gt;</code>: Defines a table header cell.</li>
+        <li><code>&lt;td&gt;</code>: Defines a table data cell.</li>
+    </ul>
+
+    <p>Attributes used:</p>
+    <ul>
+        <li><code>border</code>: Specifies the border of the table.</li>
+        <li><code rowspan</code>: Merges cells vertically.</li>
+        <li><code colspan</code>: Merges cells horizontally.</li>
+    </ul>
+</body>
