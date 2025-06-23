@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frames Example</title>
+</head>
+<frameset rows="33%,33%,34%" noresize>
+    <frame src="data:text/html,
+    <html>
+    <head><title>Image Frame</title></head>
+    <body style='margin:10px; text-align:center; background-color:#f0f8ff;'>
+        <h3>Frame 1: Image</h3>
+        <img src='https://via.placeholder.com/200x150/4CAF50/white?text=Sample+Image' 
+             alt='Sample Image' style='border:2px solid #333;'>
+        <p>This is the first frame containing an image</p>
+    </body>
+    </html>" name="imageframe">
+    
+    <frame src="data:text/html,
+    <html>
+    <head><title>Text Frame</title></head>
+    <body style='margin:10px; background-color:#fff8dc; font-family:Arial;'>
+        <h3>Frame 2: Paragraph</h3>
+        <p style='text-align:justify; line-height:1.6;'>
+            This is the second frame containing a paragraph of text. 
+            HTML frames allow you to divide a web page into multiple sections, 
+            each displaying different content. Frames were commonly used in older 
+            web development to create layouts with fixed navigation areas and 
+            content sections. Each frame can load different HTML documents 
+            independently.
+        </p>
+        <p><strong>Note:</strong> Frames are now considered obsolete in modern web development.</p>
+    </body>
+    </html>" name="textframe">
+    
+    <frame src="data:text/html,
+    <html>
+    <head><title>Links Frame</title></head>
+    <body style='margin:10px; background-color:#f5f5dc;'>
+        <h3>Frame 3: Hyperlinks</h3>
+        <ul style='list-style-type:none; padding:0;'>
+            <li style='margin:10px 0;'>
+                <a href='https://www.google.com' target='_blank' 
+                   style='color:#1a73e8; text-decoration:none; font-size:16px;'>
+                   🔗 Visit Google
+                </a>
+            </li>
+            <li style='margin:10px 0;'>
+                <a href='https://www.github.com' target='_blank' 
+                   style='color:#333; text-decoration:none; font-size:16px;'>
+                   🔗 Visit GitHub
+                </a>
+            </li>
+            <li style='margin:10px 0;'>
+                <a href='https://www.stackoverflow.com' target='_blank' 
+                   style='color:#f48024; text-decoration:none; font-size:16px;'>
+                   🔗 Visit Stack Overflow
+                </a>
+            </li>
+        </ul>
+        <p style='font-size:12px; color:#666;'>
+            Links open in new window/tab
+        </p>
+    </body>
+    </html>" name="linkframe">
+    
+    <noframes>
+        <body>
+            <h2>Frames Not Supported</h2>
+            <p>Your browser does not support frames. Here's the content that would appear in frames:</p>
+            
+            <div style="border:1px solid #ccc; margin:10px; padding:10px;">
+                <h3>Image Section</h3>
+                <img src="https://via.placeholder.com/200x150/4CAF50/white?text=Sample+Image" alt="Sample Image">
+                <p>This would be displayed in the first frame.</p>
+            </div>
+            
+            <div style="border:1px solid #ccc; margin:10px; padding:10px;">
+                <h3>Text Section</h3>
+                <p>This paragraph would be displayed in the second frame. HTML frames divide pages into sections.</p>
+            </div>
+            
+            <div style="border:1px solid #ccc; margin:10px; padding:10px;">
+                <h3>Links Section</h3>
+                <a href="https://www.google.com">Visit Google</a><br>
+                <a href="https://www.github.com">Visit GitHub</a><br>
+                <a href="https://www.stackoverflow.com">Visit Stack Overflow</a>
+            </div>
+        </body>
+    </noframes>
+</frameset>
+</html>
