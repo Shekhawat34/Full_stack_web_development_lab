@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantic Elements Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #555;
+        }
+        
+        main {
+            display: flex;
+            min-height: 500px;
+        }
+        
+        .content {
+            flex: 2;
+            padding: 2rem;
+        }
+        
+        aside {
+            flex: 1;
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-left: 1px solid #ddd;
+        }
+        
+        article {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        section {
+            margin-bottom: 1.5rem;
+        }
+        
+        figure {
+            margin: 1rem 0;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        
+        figcaption {
+            font-style: italic;
+            color: #666;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        .tag-label {
+            background-color: #e3f2fd;
+            color: #1976d2;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .sidebar-section {
+            background-color: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Element -->
+        <header>
+            <h1>HTML5 Semantic Elements Demo <span class="tag-label">&lt;header&gt;</span></h1>
+            <p>Demonstrating the power of semantic HTML5 elements</p>
+        </header>
+
+        <!-- Navigation Element -->
+        <nav>
+            <span class="tag-label">&lt;nav&gt;</span>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main>
+            <span class="tag-label">&lt;main&gt;</span>
+            
+            <!-- Content Section -->
+            <div class="content">
+                <span class="tag-label">&lt;div&gt;</span>
+                
+                <!-- Article Element -->
+                <article>
+                    <span class="tag-label">&lt;article&gt;</span>
+                    <h2>Understanding HTML5 Semantic Elements</h2>
+                    
+                    <!-- Section Element -->
+                    <section>
+                        <span class="tag-label">&lt;section&gt;</span>
+                        <h3>What are Semantic Elements?</h3>
+                        <p>Semantic elements are HTML tags that <span class="highlight">provide meaning</span> to the content they contain. Unlike generic elements like <span class="tag-label">&lt;div&gt;</span> and <span class="tag-label">&lt;span&gt;</span>, semantic elements clearly describe their purpose and content type.</p>
+                        
+                        <!-- Figure Element -->
+                        <figure>
+                            <span class="tag-label">&lt;figure&gt;</span>
+                            <img src="https://via.placeholder.com/400x200/667eea/white?text=HTML5+Semantic+Structure" alt="HTML5 Semantic Structure">
+                            <figcaption>
+                                <span class="tag-label">&lt;figcaption&gt;</span>
+                                HTML5 semantic elements provide better structure and meaning to web content
+                            </figcaption>
+                        </figure>
+                    </section>
+
+                    <!-- Another Section -->
+                    <section>
+                        <h3>Benefits of Semantic HTML</h3>
+                        <p>Using semantic elements improves <span class="highlight">accessibility</span>, SEO, and code maintainability. Screen readers can better understand the content structure, and search engines can more effectively index your content.</p>
+                    </section>
+                </article>
+
+                <!-- Second Article -->
+                <article>
+                    <h2>HTML5 Elements in Action</h2>
+                    
+                    <section>
+                        <h3>Element Overview</h3>
+                        <p>This page demonstrates various <span class="highlight">HTML5 semantic elements</span> including:</p>
+                        <ul>
+                            <li><strong>&lt;header&gt;</strong> - Page or section header</li>
+                            <li><strong>&lt;nav&gt;</strong> - Navigation links</li>
+                            <li><strong>&lt;main&gt;</strong> - Main content area</li>
+                            <li><strong>&lt;article&gt;</strong> - Independent content</li>
+                            <li><strong>&lt;section&gt;</strong> - Thematic grouping</li>
+                            <li><strong>&lt;aside&gt;</strong> - Sidebar content</li>
+                            <li><strong>&lt;footer&gt;</strong> - Page or section footer</li>
+                        </ul>
+                    </section>
+                </article>
+            </div>
+
+            <!-- Aside Element (Sidebar) -->
+            <aside>
+                <span class="tag-label">&lt;aside&gt;</span>
+                
+                <div class="sidebar-section">
+                    <h3>Quick Facts</h3>
+                    <p>HTML5 was first released in <span class="highlight">2014</span> and introduced many new semantic elements to improve web structure.</p>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Related Topics</h3>
+                    <ul>
+                        <li>CSS Grid Layout</li>
+                        <li>Flexbox</li>
+                        <li>Web Accessibility</li>
+                        <li>SEO Best Practices</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Code Example</h3>
+                    <figure>
+                        <img src="https://via.placeholder.com/200x120/764ba2/white?text=Code+Example" alt="Code Example">
+                        <figcaption>Example of semantic HTML structure</figcaption>
+                    </figure>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Footer Element -->
+        <footer>
+            <span class="tag-label">&lt;footer&gt;</span>
+            <div>
+                <p>&copy; 2025 HTML5 Semantic Demo. All rights reserved.</p>
+                <p>This page demonstrates the use of <span class="highlight">semantic HTML5 elements</span> for better web structure.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
