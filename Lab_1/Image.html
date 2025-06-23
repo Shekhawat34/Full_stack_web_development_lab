@@ -1,0 +1,45 @@
+<!-- HTML document that has your image and your friend’s image with a specific height and width. Also when clicked on the images it should navigate to their respective profiles. -->
+<!DOCTYPE html?
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Image Links</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            img {
+                width: 200px; /* Set a specific width */
+                height: 200px; /* Set a specific height */
+                border-radius: 10px; /* Optional: add some styling */
+            }
+            a {
+                text-decoration: none;
+                color: #0066cc;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h1>Image Links</h1>
+        <p>Click on the images below to visit the respective profiles.</p>
+
+        <div>
+            <a href="https://www.example.com/your-profile" target="_blank">
+                <img src="your-image.jpg" alt="Your Profile Image">
+            </a>
+            <p>Lokender </p>
+        </div>
+
+        <div>
+            <a href="https://www.example.com/friend-profile" target="_blank">
+                <img src="friend-image.jpg" alt="Friend's Profile Image">
+            </a>
+            <p>Pranav</p>
+        </div>
+    </body>
